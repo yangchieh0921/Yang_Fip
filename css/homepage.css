@@ -1,0 +1,262 @@
+.nike {
+	width:300px;
+	height:200px;
+	border:1px #ccc solid;
+	float:left;
+	text-align: center;
+	margin:10px;
+	font-size: 24px;
+	padding:20px;
+}
+
+.jordan {
+	width:250px;
+	height:200px;
+	border:1px #ccc solid;
+	float:left;
+	text-align: center;
+	margin:10px;
+	font-size: 24px;
+	padding:20px;
+}
+
+.converse {
+	width:250px;
+	height:200px;
+	border:1px #ccc solid;
+	float:left;
+	text-align: center;
+	margin:10px;
+	font-size: 24px;
+	padding:20px;
+}
+
+.adidas {
+	width:250px;
+	height:200px;
+	border:1px #ccc solid;
+	float:left;
+	text-align: center;
+	margin:10px;
+	font-size: 24px;
+	padding:20px;
+}
+
+.title2 {
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	background-color: #000;
+}
+
+.title {
+	font-size: 100px;
+	color: #fff;
+	text-align: center;
+}
+
+.background {
+	background-image: url(../images/background.jpg);
+	padding: 20px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+ 	width: 980px;
+ 	margin: 0px auto;
+ 	background-color: #fff;
+ }
+
+.mainHeader {
+	display: flex;
+	flex-direction;
+	justify-content: flex-start;
+
+
+}
+
+.logoHeader {
+	width: 200px;
+	margin-top: 10px;
+	margin-left:20px;
+	margin-bottom: 20px;
+}
+.mainNav {
+	width: 500px;
+	height: 25px;
+	margin-top: 45px;
+	margin-left: auto;
+}
+
+.mainNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #796f6d;
+ 
+}
+
+.mainNav ul li {
+  float: left;
+}
+
+.mainNav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.mainNav ul li a:hover {
+  background-color: #111;
+}
+
+.manu {
+	flex-direction: column;
+	margin-top:0;
+
+}
+.manu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.manu li {
+  float: left;
+}
+
+.manu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.manu li a:hover {
+  background-color: #111;
+}
+
+.resBut {
+  margin:0 auto;
+  margin-top: 10px;
+}
+
+.resources
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.resources p {
+  margin-top: 20px;
+  line-height: 22px;
+  color: #666;
+  font-size: 16px;
+}
+
+.resBut {
+  display: block;
+  width: 100px;
+  padding: 15px;
+  color: #FFF;
+  background-color: #000;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.mainFooter {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  background-color: #ccc;
+  justify-content: flex-start;
+  height: 125px;
+  background: url(../images/footer_bg.jpg) repeat-x;
+}
+
+.logoNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoFooter {
+  margin-top: 25px;
+  margin-bottom: 20px; /*for nav underneath, nav can't use margin on floated element above*/
+  margin-left: 20px;
+}
+
+.footerNav {
+  width: 380px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.footerNav ul {
+  padding: 0;
+  list-style-type: none;
+  width: 500px;
+  margin-left: 0;
+}
+
+.footerNav ul li { 
+  cursor: pointer;
+  display: inline;
+  margin-right: 25px;
+  font-size: 12px;  
+}
+
+.footerNav ul li a {
+  color: #333;
+}
+
+.footerNav ul li a:hover {
+  color: #999;
+}
+
+.socialMedia {
+  height: 45px;
+  margin-left: auto;
+  margin-top: 28px;
+  margin-right: 10px;
+}
+
+#iconNav img {
+  width: 45px;
+  height: 45px;
+}
+
+#iconNav {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+#iconNav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#iconNav li a {
+  filter: grayscale(100%);
+}
+
+#iconNav li a:hover {
+  filter: grayscale(0%);
+}

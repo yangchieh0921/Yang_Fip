@@ -1,0 +1,559 @@
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero*/
+
+.box {
+  background-color: #8ea86e;
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+}
+
+div,p,body,header,footer,section,article,nav,h1,h2,h3,h4 { 
+margin: 0; 
+padding: 0; 
+} 
+
+img { 
+border: none; 
+margin: 0; 
+padding: 0; 
+}
+
+/*html selectors*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  background-color: #ededed;
+  /*http://www.heropatterns.com/*/
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23c8c8c8' fill-opacity='0.33' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/*a:link is for not visited, a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited { 
+text-decoration:none; 
+}
+
+a:hover, a:active { 
+text-decoration:none; 
+ }
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+  display: none;
+}
+
+/*-- End hidden --*/
+
+/*-- Start Container --*/
+
+.container
+{
+  width: 980px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/*-- End Container --*/
+
+/*-- Start Header --*/
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.logoHeader
+{
+  width: 220px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.mainNav
+{
+  width: 500px;
+  height: 25px;
+  margin-top: 45px;
+  margin-left: auto;
+}
+
+.mainNav ul
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+.mainNav ul li {  
+  font-size: 14px;
+  display: inline;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.mainNav ul li a
+{
+  color: #666666;
+  padding: 5px;
+}
+
+.mainNav ul li a:hover {
+  padding: 5px;
+  background-color: #796f6d;
+}
+
+.selected
+{
+  padding: 5px 0px 5px 0px;
+  background-color: #ddeff7;
+}
+
+/*-- End Header --*/
+
+/*-- Start Header --*/
+
+.hero
+{
+  height: 384px;
+  width: 980px;
+  position: relative; /*set to relative to anything that uses absolute inside will positioned to the top left corner of this element*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.heroIndex {
+  background: url(../images/home_header.jpg) no-repeat bottom; 
+}
+
+.heroGallery {
+  background: url(../images/promo1.jpg) no-repeat bottom; 
+}
+
+.heroContact {
+  background: url(../images/promo.jpg) no-repeat bottom; 
+}
+
+.hero h2
+{
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.hero h3
+{
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  font-weight:normal;
+  margin-bottom: 20px;
+}
+
+/*-- End Hero --*/
+
+/*-- Start Index --*/
+
+.resources
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.resources p
+{
+  margin-top: 20px;
+  line-height: 22px;
+  color: #666;
+  font-size: 16px;
+}
+
+/* applies the same set of styling to multiple classes */
+.packages, .fish, .donations
+{
+  color: #fff;
+  width: 300px;
+}
+
+.resBut
+{
+  display: block;
+  width: 100px;
+  padding: 15px;
+  color: #FFF;
+  background-color: #61a3c1;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.resBut:hover
+{
+  background-color: #3f6e84;
+}
+
+.testimonialCon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.testimonial
+{
+  background-color: #efefef;
+  width: 460px;
+  height: 170px;
+  margin-bottom: 20px;
+}
+
+.testimonial p
+{
+  margin-top: 20px;
+  line-height: 22px;
+  color: #666;
+  font-size: 16px;
+}
+
+.testImage
+{
+  float: left;
+  margin-top: 20px;
+  margin-left: 15px;  
+  margin-right: 10px;
+}
+
+.testimonialName
+{
+  display: block;
+  font-weight:bold;
+  margin-top: 15px;
+  color: #61a3c1;
+}
+
+/*-- End Index --*/
+
+ /*Gallery Page*/
+
+#mainGallery {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  width: 940px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#mainGallery h2 {
+  font-size: 30px;
+  width: 940px;
+  color: #ff3333;
+  background-color: #ffcccc;
+  margin-bottom: 40px;
+  padding: 8px 0px 8px 5px;
+
+}
+
+.galleryImageCon {
+  width: 220px;
+  margin-bottom: 40px;
+}
+
+.galleryImageCon img {
+  border: 1px solid #666;
+}
+
+.galleryImageCon h3 {
+  border-top: dashed 1px #666;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  color: #2073a8;
+  font-size: 18px;
+}
+
+.galleryImageCon p {
+  font-size: 12px;
+  margin-top: 0;
+  border-bottom: 1px solid #666;
+  padding-bottom: 15px;
+}
+
+/*-- End Gallery --*/
+
+/*-- Contact Page --*/
+
+#mainContact {
+  width: 940px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#mainContact h2 {
+  font-size: 30px;
+  color: #2073a8;
+  background-color: #ddeff7;
+  margin-bottom: 40px;
+  padding: 8px 0px 8px 5px;
+  width: 940px;
+}
+
+#contactArea {
+  width: 469px;
+  border-right: solid 1px #CCC;
+  margin-bottom: 30px;
+}
+
+
+#contactText {
+  font-size: 21px;
+  margin-bottom: 30px;
+  width: 340px;
+}
+
+#contactForm {
+  margin-top: 30px;
+}
+
+fieldset {
+  border: none;
+  padding: 0px;
+}
+
+
+input, textarea  {
+  font-size: 11px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 10px;
+  background-color: #efefef;
+  display: block;
+  border: 1px solid #999;
+  color: #333;
+}
+
+#comments {
+  width: 360px;
+  height: 200px;
+}
+
+#submit {
+  display: block;
+  width: 75px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  color: #FFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #2073a8;
+  font-size: 14px;
+  border: 1px solid #003471;
+}
+
+#mapArea {
+  width: 380px;
+  margin-left: 90px;
+}
+
+
+#mapArea h3 {
+  font-size: 21px;
+  margin-top: 0;
+  color: #2073a8;
+}
+
+#mapArea ul {
+  list-style-type: none;
+  padding: 0;
+} 
+
+/*-- Start Footer --*/
+
+.mainFooter {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  background-color: #ccc;
+  justify-content: flex-start;
+  height: 125px;
+  background: url(../images/footer_bg.jpg) repeat-x;
+}
+
+.logoNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoFooter {
+  margin-top: 25px;
+  margin-bottom: 20px; /*for nav underneath, nav can't use margin on floated element above*/
+  margin-left: 20px;
+}
+
+.footerNav {
+  width: 380px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.footerNav ul {
+  padding: 0;
+  list-style-type: none;
+  width: 500px;
+  margin-left: 0;
+}
+
+.footerNav ul li { 
+  cursor: pointer;
+  display: inline;
+  margin-right: 25px;
+  font-size: 12px;  
+}
+
+.footerNav ul li a {
+  color: #333;
+}
+
+.footerNav ul li a:hover {
+  color: #999;
+}
+
+.socialMedia {
+  height: 45px;
+  margin-left: auto;
+  margin-top: 28px;
+  margin-right: 10px;
+}
+
+#iconNav img {
+  width: 45px;
+  height: 45px;
+}
+
+#iconNav {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+#iconNav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#iconNav li a {
+  filter: grayscale(100%);
+}
+
+#iconNav li a:hover {
+  filter: grayscale(0%);
+}
+
+/*-- End Footer --*/
+
+@media screen AND (max-width:800px) {
+
+  .container {
+    width:100%;
+  }
+
+  .mainHeader {
+  flex-direction: column;
+  width: 100%;
+}
+
+.mainNav {
+  flex-direction: column;
+  margin-top:0;
+  margin-bottom:50px;
+  width:100%;
+  flex:1;
+}
+
+.mainNav ul {
+  display:flex;
+  flex-direction: column;
+  flex:1;
+  margin:0 auto;
+  text-align: center;
+}
+
+.mainNav ul li {
+  flex-direction: column;
+  display:block;
+  padding:15px;
+  font-size: 18px;
+}
+
+.logoHeader {
+margin:0px auto;
+margin-bottom:20px;
+}
+
+.hero {
+  width:100%;
+  flex:1;
+  padding-bottom:10px;
+}
+
+.hero h2 {
+  font-size: 21px;
+  margin-top:0;
+}
+
+.resources {
+  flex-direction: column;
+  width:100%;
+  margin-left:10%;
+  margin-bottom:20px;
+  flex:1;
+}
+
+.packages,.fish,.donations {
+    margin-bottom:75px;
+  width:80%;
+  text-align: center;
+}
+
+.resBut {
+  margin:0 auto;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
