@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sneaker Shop.</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+	<h1 class="hidden">Sneaker shop.</h1>
+	<div class="container"><!--start container-->
+    	<header class="mainHeader"><!--start mainHeader-->
+        	<div class="logoHeader">
+        		<img src="images/logo.jpg" alt="Sneaker shop" width="215" height="120" id="logo">
+            </div>
+            <nav class="mainNav"><!--start mainNav-->
+                <h2 class="hidden">Main Navigation</h2>
+                <ul>
+                    <li><a href="#">Browse</a></li>
+                   <li><a href="#">News</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Contact</a></li>
+                   <li class="#"><a href="#">Login</a></li>
+                </ul>
+            </nav><!--end mainNav-->
+        </header><!--end mainHeader-->
+
+        <section class="hero heroContact">
+          <h2>Wellcome to Contact US</h2>
+          <h3>We’re for staying in touch</h3>
+        </section>  
+        <main>
+        <section id="mainContact"> <!--start mainGallery-->
+                    <h2>Contact Us</h2>
+        	<section id="contactArea"><!--start contactArea-->
+                <h2 class="hidden">Contact form</h2>
+                <p id="contactText">For more information about you
+            </p> 
+            <form id="contactForm" action="form.php" method="post">
+                    <label for="name">Name: (required)</label>
+                    <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your name">
+                    
+                    <label for="email">Email: (will not be published)</label>
+                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
+                    
+                    
+                    <label for="phone">Phone: (required)</label>
+                    <input type="tel" required id="phone" size="30" placeholder="Enter Phone Number">
+                    
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+                   
+                    <input id="submit" type="submit" value="Submit">
+            </form>
+        	</section><!--end contactArea-->  
+            
+            <section id="mapArea"><!--start mapArea-->
+            	<h3>Payments</h3>
+              <img src="images/apple_pay.png" width="280" height="320" alt="apple pay">
+              <img src="images/visa.png" width="280" height="320" alt="visa">
+            </section><!--end mapArea-->      
+        </section><!--end mainContact-->
+    </main>
+    <footer class="mainFooter">
+      <div class="LogoNav">
+        <div class="logoFooter">
+          <img src="images/logo.jpg" alt="Sneaker shop." width="130" height="75" id="logoFooter">
+        </div>
+        <nav class="footerNav">
+          <h2 class="hidden">Footer navigation</h2>
+            <ul>
+                <li><a href="#">Browse</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#l">Login</a></li>
+              </ul>
+        </nav>
+      </div>  
+
+      <div class="socialMedia">
+        <h2 class="hidden">Social Media</h2>
+        <ul id="iconNav">
+            <li id="facebook">
+              <a href="http://www.facebook.com">
+                <img src="images/facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li id="twitter">
+              <a href="http://www.twitter.com">
+                <img src="images/twitter.svg" alt="twitter">
+              </a>
+            </li>
+            <li id="youtube">
+              <a href="http://www.youtube.com">
+                <img src="images/youtube.svg" alt="youtube">
+              </a>
+           </li>
+        </ul>
+      </div>     
+    </footer>
+    </div><!--end container-->
+</body>
+</html>
